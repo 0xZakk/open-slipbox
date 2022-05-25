@@ -1,54 +1,37 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+# Open Slipbox
 
-## 🚀 Quick start
+## Features
 
-1.  **Create a Gatsby site.**
+**Note Template**
+- title, date updated, source and other metadata
+- easy to read content
+- list of backlinks below content (will need to generate this when generating
+  each page)
+- tags
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+**Tags**
+- auto-generated page for tags (i.e. /tags/pkm) that lists all the notes with
+  that tag
+- page that lists all tags
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+**Graph**
+- A separate page that shows the graph of all my notes and their related pages
 
-2.  **Start developing.**
+## Pages
 
-    Navigate into your new site’s directory and start it up.
+**Home**
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
 
-3.  **Open the code and start customizing!**
+**About**
 
-    Your site is now running at http://localhost:8000!
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+**Changelog**
+- page that shows commits (ideally pulled from github)
+- each update/commit links out to the pages that were changed or updated
 
-4.  **Learn more**
+**Articles**
+- list of articles sorted by date published
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+**Domains** / **Areas of Interest**
+- Lists the 8-12 domains that I write about and am interested in (linking out to
+  each)
