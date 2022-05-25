@@ -13,6 +13,7 @@ module.exports = {
         fonts: ["Inter", "Newsreader"],
       },
     },
+    "gatsby-plugin-theme-ui",
     {
       resolve: "gatsby-plugin-manifest",
       options: {

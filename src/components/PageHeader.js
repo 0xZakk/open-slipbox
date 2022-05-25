@@ -1,16 +1,19 @@
+/** @jsx jsx */
+import { jsx } from "theme-ui";
 import React from "react";
+import { Flex, Box } from "theme-ui";
+import { Link } from "gatsby";
 
 export default function PageHeader() {
-  console.log("here");
   return (
-    <div>
-      <div>
-        <a href="/">Title</a>
-      </div>
-      <div>
-        <a href="/articles">Writing</a>
-        <a href="/domains">Areas of Interest</a>
-      </div>
-    </div>
+    <Flex>
+      <Box>
+        <Link to="/">Home</Link>
+      </Box>
+      <Box ml="auto">
+        <Link to="/articles">Writing</Link>
+        <Link to="/domains">Areas of Interest</Link>
+      </Box>
+    </Flex>
   );
 }

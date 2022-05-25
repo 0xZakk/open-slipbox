@@ -1,5 +1,5 @@
 import React from "react";
-// TODO: replace a tags with gatsby Link component
+import { Link } from "gatsby";
 
 export default function PageFooter() {
   return (
@@ -7,10 +7,11 @@ export default function PageFooter() {
       <hr />
       <div>
         <div>
-          &copy; <a href="/">zkf.io</a> | <a href="/articles">Writing</a> |
-          <a href="/domains">Areas of Interest</a> |
-          <a href="/about">About this space</a> | <a href="/privacy">Privacy</a>{" "}
-          |<a href="/changelog">What's new</a>
+          &copy; <Link to="/">zkf.io</Link> |{" "}
+          <Link to="/articles">Writing</Link> |{" "}
+          <Link to="/domains">Areas of Interest</Link> |{" "}
+          <Link to="/about">About</Link> | <Link to="/privacy">Privacy</Link> |{" "}
+          <Link to="/changelog">What's new</Link>
         </div>
       </div>
     </>
