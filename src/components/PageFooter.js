@@ -1,9 +1,10 @@
 import React from "react";
+import { Box } from "theme-ui";
 import { Link } from "gatsby";
 
 export default function PageFooter() {
   return (
-    <>
+    <Box sx={{ mb: 5 }}>
       <hr />
       <div>
         <div>
@@ -14,6 +15,6 @@ export default function PageFooter() {
           <Link to="/changelog">What's new</Link>
         </div>
       </div>
-    </>
+    </Box>
   );
 }
