@@ -1,18 +1,21 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui";
-import React from "react";
 import { Flex, Box } from "theme-ui";
-import { Link } from "gatsby";
+import NavLink from "./NavLink";
 
 export default function PageHeader() {
   return (
     <Flex>
       <Box>
-        <Link to="/">Home</Link>
+        <NavLink to="/" sx={{ ml: -16 }}>
+          Home
+        </NavLink>
       </Box>
       <Box ml="auto">
-        <Link to="/articles">Writing</Link>
-        <Link to="/domains">Areas of Interest</Link>
+        <NavLink to="/articles">Writing</NavLink>
+        <NavLink to="/domains" sx={{ mr: -16 }}>
+          Areas of Interest
+        </NavLink>
       </Box>
     </Flex>
   );
