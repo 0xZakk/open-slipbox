@@ -1,5 +1,6 @@
 ---
 title: "The Knot: How to Think About Problem Solving"
+slug: the-knot-how-to-think-about-problem-solving
 date_published: 2021-03-10T14:18:05.000Z
 date_updated: 2021-03-10T14:52:14.000Z
 tags: Learning

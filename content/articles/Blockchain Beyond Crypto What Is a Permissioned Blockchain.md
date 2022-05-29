@@ -1,5 +1,6 @@
 ---
 title: "Blockchain Beyond Crypto: What Is a Permissioned Blockchain"
+slug: blockchain-beyond-crypto-what-is-a-permissioned-blockchain
 excerpt: "With bitcoin in the news so much these days, a lot of people are asking about how useful it is. Bitcoin is a proving-problem for blockchain, which will likely see a lot of growth in the next decade."
 date_published: 2021-03-01T13:58:05.000Z
 date_updated: 2021-03-01T13:58:05.000Z
@@ -54,5 +55,4 @@ The new medical record system used by the Taipei Medical University Hospital is 
 - [[🟨 Disadvantages of Permissioned Blockchains]]
 - [[🟨 How the blockchain is changing money and business]]
 - [[🟦 Taiwanese hospital launches blockchain health records]]
-
 

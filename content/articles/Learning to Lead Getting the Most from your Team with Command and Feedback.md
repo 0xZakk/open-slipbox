@@ -1,5 +1,6 @@
 ---
 title: "Learning to Lead: Getting the Most from your Team with Command and Feedback"
+slug: learning-to-lead-getting-the-most-out-of-your-team-with-command-and-feedback
 date_published: 2020-07-14T00:00:00.000Z
 date_updated: 2021-02-22T17:19:17.000Z
 tags: Management

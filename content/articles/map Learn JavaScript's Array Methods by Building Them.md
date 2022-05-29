@@ -1,5 +1,6 @@
 ---
 title: "map: Learn JavaScript's Array Methods by Building Them"
+slug: map-learn-javascripts-array-methods-by-building-them
 date_published: 2020-12-04T00:00:00.000Z
 date_updated: 2021-04-08T12:44:23.000Z
 tags: Programming, JavaScript

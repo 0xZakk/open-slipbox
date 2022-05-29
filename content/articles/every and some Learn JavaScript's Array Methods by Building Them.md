@@ -1,5 +1,6 @@
 ---
 title: "every and some: Learning JavaScript's Array Methods by Building Them"
+slug: every-and-some-learning-javascripts-array-methods-by-building-them
 date_published: 2021-03-24T13:20:31.000Z
 date_updated: 2021-03-24T13:20:31.000Z
 tags: JavaScript

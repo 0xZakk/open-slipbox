@@ -1,5 +1,6 @@
 ---
 title: "A New CTO’s Reading List"
+slug: a-new-ctos-reading-list
 date_published: 2021-04-09T13:49:35.000Z
 date_updated: 2021-04-09T13:49:35.000Z
 tags: Career, Management

@@ -1,5 +1,6 @@
 ---
 title: "Sci Fi: Ender’s Desk and the Future of Training and Learning"
+slug: enders-desk-and-the-future-of-training-and-learning
 date_published: 2021-04-08T12:30:00.000Z
 date_updated: 2021-04-08T12:30:35.000Z
 tags: Science Fiction, Learning

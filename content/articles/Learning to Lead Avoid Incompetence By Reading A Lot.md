@@ -1,5 +1,6 @@
 ---
 title: "Learning to Lead: Avoid Incompetence By Reading A Lot"
+slug: learning-to-lead-avoid-incompetence-by-reading-a-lot
 date_published: 2020-08-03T00:00:00.000Z
 tags: Reading
 excerpt: Leadership is all about literacy. The more you've read, the less you'll be caught off guard

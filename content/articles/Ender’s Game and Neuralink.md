@@ -1,5 +1,6 @@
 ---
 title: Ender’s Game and Neuralink
+slug: enders-game-and-neuralink
 date_published: 2021-03-03T14:00:00.000Z
 date_updated: 2021-03-03T14:00:00.000Z
 tags: Science Fiction

@@ -1,5 +1,6 @@
 ---
 title: "Learning to Lead: Brilliant at the Basics"
+slug: learning-to-lead-brilliant-at-the-basics
 date_published: 2020-07-20T00:00:00.000Z
 date_updated: 2021-02-22T17:19:23.000Z
 tags: Management

@@ -1,5 +1,6 @@
 ---
 title: "Reading Projects: What They Are and How to Set One"
+slug: reading-projects-what-they-are-and-how-to-set-one
 date_published: 2021-04-23T13:58:35.000Z
 date_updated: 2021-04-23T13:58:35.000Z
 tags: Reading

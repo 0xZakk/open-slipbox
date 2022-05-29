@@ -15,7 +15,8 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const defaultTemplate = require.resolve("./src/templates/default.js");
-  const noteTemplate = require.resolve("./src/templates/noteTemplate.js");
+  const noteTemplate = require.resolve("./src/templates/note.js");
+  const articleTemplate = require.resolve("./src/templates/article.js");
 
   const { createPage } = actions;
 
@@ -51,12 +52,58 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   sitePagesMarkdown.forEach(({ node }) => {
     const { childMarkdownRemark } = node;
-    const { id, html } = childMarkdownRemark;
+    const { id, html, frontmatter } = childMarkdownRemark;
 
     const page = {
-      path: childMarkdownRemark.frontmatter.permalink,
+      path: frontmatter.permalink,
       component: defaultTemplate,
-      context: { id, html },
+      context: { id, html, frontmatter },
+    };
+
+    createPage(page);
+  });
+
+  /*
+   * 2. Create all article pages
+   */
+  const siteArticles = await graphql(`
+    {
+      allFile(filter: { sourceInstanceName: { eq: "articles" } }) {
+        edges {
+          node {
+            childMarkdownRemark {
+              id
+              html
+              frontmatter {
+                title
+                slug
+                tags
+                date_published
+                type
+                excerpt
+              }
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  if (siteArticles.errors) {
+    reporter.panicOnBuild("Error while running GraphQL query.");
+    return;
+  }
+
+  const siteArticlesMarkdown = siteArticles.data.allFile.edges;
+
+  siteArticlesMarkdown.forEach(({ node }) => {
+    const { childMarkdownRemark } = node;
+    const { id, html, frontmatter } = childMarkdownRemark;
+
+    const page = {
+      path: frontmatter.slug,
+      component: articleTemplate,
+      context: { id, html, frontmatter },
     };
 
     console.log(page);

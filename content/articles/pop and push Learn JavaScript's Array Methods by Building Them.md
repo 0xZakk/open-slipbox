@@ -1,5 +1,6 @@
 ---
 title: "pop and push: Learning Javascript's Array Methods by Building Them"
+slug: pop-and-push-learn-javascripts-array-methods-by-building-them
 date_published: 2021-02-03T00:00:00.000Z
 date_updated: 2021-04-08T12:45:11.000Z
 tags: Programming, JavaScript

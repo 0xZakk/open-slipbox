@@ -1,5 +1,6 @@
 ---
 title: "Creator Cabins: The Future of Remote Work"
+slug: creator-cabins-the-future-of-remote-work
 date_published: 2021-05-26T13:19:07.000Z
 date_updated: 2021-05-26T13:19:07.000Z
 tags: Career
