@@ -3,7 +3,7 @@ import PageFooter from "./PageFooter";
 import PageHeader from "./PageHeader";
 import Container from "./container";
 
-export default function Layout(props) {
+function Layout(props) {
   return (
     <Container>
       <PageHeader />
@@ -12,3 +12,5 @@ export default function Layout(props) {
     </Container>
   );
 }
+
+export default Layout;

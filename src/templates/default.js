@@ -1,5 +1,6 @@
+// TODO: migrate to gatsby-browser and gatsby-server
 import React from "react";
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 
 export default function Template({ pageContext }) {
   const { html } = pageContext;

@@ -5,9 +5,7 @@ id: home
 permalink: /
 ---
 
-<div>
-  <h1>Hi, I'm Zakk! 👋</h1>
-</div>
+# Hi, I'm Zakk!
 
 I'm a Solidity/Web3 developer and co-founder of [CabinDAO](https://www.creatorcabins.com/)
 
