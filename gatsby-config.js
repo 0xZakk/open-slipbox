@@ -56,6 +56,9 @@ module.exports = {
               // markdownFolder: `${__dirname}/content`,
             },
           },
+          {
+            resolve: "gatsby-remark-external-links",
+          },
         ],
       },
     },
