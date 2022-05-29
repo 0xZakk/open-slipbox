@@ -33,6 +33,9 @@ export default {
       //lineHeight: "body",
       //fontWeight: "body",
     },
+    blockquote: {
+      fontStyle: "italic",
+    },
     h1: {
       variant: "text.heading",
       fontSize: 5,

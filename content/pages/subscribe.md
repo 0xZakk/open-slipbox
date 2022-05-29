@@ -5,6 +5,8 @@ id: home
 permalink: /subscribe
 ---
 
+# Subscribe
+
 **The Refined Mind** is a bi-weekly review of ideas and notes as they are added to this site.
 
 Every two weeks I send out a <a href="/changelog">changelog</a> with links to new and updated notes.

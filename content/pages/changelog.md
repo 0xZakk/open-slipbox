@@ -4,6 +4,8 @@ title: Changelog
 permalink: /changelog
 ---
 
+# Changelog
+
 > _Tracking the changes across this site, powered by an [Obsidian Jekyll workflow](https://refinedmind.co/obsidian-jekyll-workflow)_
 
 ### 2021-12-14 -
