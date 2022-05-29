@@ -14,25 +14,27 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 };
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
+  const defaultTemplate = require.resolve("./src/templates/default.js");
+  const noteTemplate = require.resolve("./src/templates/noteTemplate.js");
+
   const { createPage } = actions;
 
-  const result = await graphql(`
+  /*
+   * 1. Create all site pages
+   */
+  const sitePages = await graphql(`
     {
-      allMarkdownRemark {
+      allFile(filter: { sourceInstanceName: { eq: "pages" } }) {
         edges {
           node {
-            id
-            html
-            parent {
-              ... on File {
-                name
-              }
-            }
-            frontmatter {
-              title
-              permalink
-              layout
+            childMarkdownRemark {
               id
+              html
+              frontmatter {
+                title
+                permalink
+                layout
+              }
             }
           }
         }
@@ -40,25 +42,24 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     }
   `);
 
-  if (result.errors) {
+  if (sitePages.errors) {
     reporter.panicOnBuild("Error while running GraphQL query.");
     return;
   }
 
-  const markdowns = result.data.allMarkdownRemark.edges;
+  const sitePagesMarkdown = sitePages.data.allFile.edges;
 
-  const noteTemplate = require.resolve("./src/templates/noteTemplate.js");
-
-  markdowns.forEach(({ node }) => {
-    const { id, html } = node;
+  sitePagesMarkdown.forEach(({ node }) => {
+    const { childMarkdownRemark } = node;
+    const { id, html } = childMarkdownRemark;
 
     const page = {
-      path: node.frontmatter.permalink,
-      component: noteTemplate,
+      path: childMarkdownRemark.frontmatter.permalink,
+      component: defaultTemplate,
       context: { id, html },
     };
 
-    //console.log(page);
+    console.log(page);
     createPage(page);
   });
 };

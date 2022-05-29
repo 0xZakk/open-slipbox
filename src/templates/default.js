@@ -2,8 +2,11 @@
 import React from "react";
 import Layout from "../components/Layout";
 
-export default function Template({ pageContext }) {
+export default function Template(props) {
+  const { pageContext } = props;
   const { html } = pageContext;
+
+  console.log(props);
 
   return (
     <Layout>

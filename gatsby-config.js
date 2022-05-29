@@ -46,6 +46,14 @@ module.exports = {
       __key: "pages",
     },
     {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "articles",
+        path: "./content/articles/",
+      },
+      __key: "articles",
+    },
+    {
       resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
